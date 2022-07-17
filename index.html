@@ -56,8 +56,13 @@
 <body>
   <header class="header">
     <div class="header-top">
-      <a href="#"><img src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg"
-          class="header-logo" alt="noemi"></a>
+      <a href="#"><img src="svg/noemi-logo.svg"
+                  class="header-logo" alt="noemi"></a>
+                  <div class="menu-row">
+                    <span class="menu-drop"></span>
+                    <span class="menu-drop"></span>
+                    <span class="menu-drop"></span>
+                  </div>
       <nav class="menu">
         <ul class="menu-list">
           <li class="menu-list-item">
@@ -130,8 +135,7 @@
 
     <main class="mainpage">
       <section class="chapter">
-        <img class="picture" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg"
-          alt="Утро в Питере">
+        <img class="picture" src="img\last-post1.jpg" alt="Утро в Питере">
         <div class="block">
           <ul class="activity-general">
             <li class="activity">Travel</li>
@@ -146,12 +150,12 @@
             </div>
           </div>
           <p class="description">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны
-            города... Музеи еще закрыты. Что смотреть?</p>
+            города... Музеи еще закрыты. Что посмотреть?</p>
         </div>
       </section>
 
       <section class="chapter">
-        <img class="picture" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post2.jpg"
+        <img class="picture" src="img\last-post2.jpg"
           alt="Йога">
         <div class="block">
           <ul class="activity-general">
@@ -172,7 +176,7 @@
       </section>
 
       <section class="chapter">
-        <img class="picture" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post3.jpg"
+        <img class="picture" src="img\last-post3.jpg"
           alt="Музыкальный фестиваль">
         <div class="block">
           <ul class="activity-general">
@@ -192,7 +196,7 @@
       </section>
 
       <section class="chapter">
-        <img class="picture" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg"
+        <img class="picture" src="img\last-post4.jpg"
           alt="Кулинария">
         <div class="block">
           <ul class="activity-general">
@@ -213,7 +217,7 @@
       </section>
 
       <section class="chapter">
-        <img class="picture" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post5.jpg"
+        <img class="picture" src="img\last-post5.jpg"
           alt="Интерьер">
         <div class="block">
           <ul class="activity-general">
@@ -242,7 +246,7 @@
       <h2 class="aside-topic">Новые посты</h2>
 
       <section class="news">
-        <img class="aside-image" src="https://netology-code.github.io/html-2-diploma/sources/images/2.jpg"
+        <img class="aside-image" src="img\2.jpg"
           alt="Увлекательные места">
         <div class="aside-content">
           <div class="aside-date">14 июня 2019</div>
@@ -253,7 +257,7 @@
       </section>
 
       <section class="news">
-        <img class="aside-image" src="https://netology-code.github.io/html-2-diploma/sources/images/151.jpg" alt="Йога">
+        <img class="aside-image" src="img\151.jpg" alt="Йога">
         <div class="aside-content">
           <div class="aside-date">14 июня 2019</div>
           <a href="#" class="aside-text">
@@ -263,7 +267,7 @@
       </section>
 
       <section class="news">
-        <img class="aside-image" src="https://netology-code.github.io/html-2-diploma/sources/images/45.jpg"
+        <img class="aside-image" src="img\45.jpg"
           alt="Балкон">
         <div class="aside-content">
           <div class="aside-date">14 июня 2019</div>
@@ -274,7 +278,7 @@
       </section>
 
       <section class="news">
-        <img class="aside-image" src="https://netology-code.github.io/html-2-diploma/sources/images/501.jpg"
+        <img class="aside-image" src="img\151.jpg"
           alt="Наука">
         <div class="aside-content">
           <div class="aside-date">14 июня 2019</div>
@@ -285,7 +289,7 @@
       </section>
 
       <section class="news">
-        <img class="aside-image" src="https://netology-code.github.io/html-2-diploma/sources/images/7.jpg"
+        <img class="aside-image" src="img\7.jpg"
           alt="Прически">
         <div class="aside-content">
           <div class="aside-date">14 июня 2019</div>
@@ -346,6 +350,11 @@
   <h2 class="futer-htop">Наши изделия</h2>
   <div class="futer">
     <div class="futer-pop futer-pop__first">
+      <picture class="course__preview">
+        <source media="(min-width: 641px) and (max-width: 1200px)" srcset="img\shop-item-tablet1.jpg">
+        <source media="(max-width: 640px)" srcset="img\shop-item-mobile1.jpg">
+        <img class="products-image" src="img\shop-item-desk1.jpg" alt="pillows">
+    </picture>
       <div class="futer-trend1"></div>
       <div class="futer-border">
         <h3><a class="futer-top" href="#">Подушки на диван</h3></a>
@@ -363,7 +372,13 @@
     </div>
 
     <div class="futer-pop futer-pop__first">
+
       <div class="futer-trend2"></div>
+      <picture class="course__preview">
+        <source media="(min-width: 641px) and (max-width: 1200px)" srcset="img\shop-item-tablet2.jpg">
+        <source media="(max-width: 640px)" srcset="img\shop-item-mobile2.jpg">
+        <img class="products-image" src="img\shop-item-desk2.jpg" alt="hare">
+      </picture>
       <div class="futer-border">
         <h3><a class="futer-top" href="#">Кукла "Зайчик"</h3></a>
         <p class="futer-aside">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена<a class="futer-desc"
@@ -382,6 +397,11 @@
 
     <div class="futer-pop futer-pop__first">
       <div class="futer-trend3"></div>
+      <picture class="course__preview">
+        <source media="(min-width: 641px) and (max-width: 1200px)" srcset="img\shop-item-tablet3.jpg">
+        <source media="(max-width: 640px)" srcset="img\shop-item-mobile3.jpg">
+        <img class="products-image" src="img\shop-item-desk3.jpg" alt="border">
+      </picture>
       <div class="futer-border">
         <h3><a class="futer-top" href="#">Шестиугольная рамка</h3></a>
         <p class="futer-aside">Необычная рамка для украшения дома из видео<a class="futer-desc" href="#">"Как сделать

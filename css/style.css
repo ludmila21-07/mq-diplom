@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: OpenSans-Bold;
-  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+  src: url(../fonts/OpenSans-Bold.woff);
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 
 .header {
   position: relative;
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
+  background-image: url(../img/banner-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000000;
@@ -99,11 +99,11 @@ body {
 
 
 .boxpop-up {
- 
+
   width: 100%;
   height: 100%;
   display: flex;
-  
+
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -600,6 +600,7 @@ h2 {
   font-size: 14px;
   line-height: 18px;
   margin-top: 5px;
+  margin-bottom: 0;
 }
 
 .search {
@@ -755,21 +756,24 @@ h2 {
   margin-right: auto;
   box-sizing: border-box;
   justify-content: space-between;
-  
+
 
 }
+
 .futer-pop {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
+
 .futer-aside {
   font-family: OpenSans-Regular;
   font-size: 15px;
   color: #000000;
   margin-top: 11px;
-  
+
 }
+
 .futer-desc {
   text-decoration: none;
   font-family: OpenSans-Regular;
@@ -777,39 +781,44 @@ h2 {
   font-size: 15px;
   text-transform: inherit;
 }
+
 .futer-pop__first {
   width: 345px;
 }
+
 .futer-trend1 {
   width: calc(100% - 40px);
-  height: 204px;
+
   margin-left: 20px;
-  background-image: url(../img/shop-item-desk1.jpg);
+
   background-repeat: no-repeat;
   margin-right: 20px;
   background-position: center center;
   background-size: cover;
 }
+
 .futer-trend2 {
   width: calc(100% - 40px);
-  height: 204px;
+
   margin-left: 20px;
-  background-image: url(../img/shop-item-desk2.jpg);
+
   background-repeat: no-repeat;
   margin-right: 20px;
   background-position: center center;
   background-size: cover;
 }
+
 .futer-trend3 {
   width: calc(100% - 40px);
-  height: 204px;
+
   margin-left: 20px;
-  background-image: url(../img/shop-item-desk3.jpg);
+
   background-repeat: no-repeat;
   margin-right: 20px;
   background-position: center center;
   background-size: cover;
 }
+
 .futer-border {
   border: 2px solid #ccbf9f;
   margin-top: -31px;
@@ -818,6 +827,7 @@ h2 {
   padding-bottom: 27px;
   flex-grow: 1;
 }
+
 .futer-top {
   text-decoration: none;
   font-size: 20px;
@@ -828,28 +838,41 @@ h2 {
   margin-top: 47px;
 
 }
+
 .futer-price {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .futer-button {
   display: flex;
   width: 136px;
   height: 46px;
   background-color: #b59f5b;
-  color:white;
+  color: white;
   text-transform: uppercase;
   text-decoration: none;
   align-items: center;
   justify-content: center;
-  font-family:OpenSans-Bold;
+  font-family: OpenSans-Bold;
   font-size: 14px;
 
 }
+
 .price {
   font-family: OpenSans-Bold;
   font-size: 14px;
+}
+
+.course__preview {
+  display: flex;
+}
+
+.products-image {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer {
@@ -882,15 +905,15 @@ h2 {
 }
 
 .footer__1 {
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg);
+  background-image: url(../svg/001-dribbble.svg);
 }
 
 .footer__2 {
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg);
+  background-image: url(../svg/001-pinterest.svg);
 }
 
 .footer__3 {
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg);
+  background-image: url(../svg/003-tumblr.svg);
 }
 
 
@@ -913,4 +936,543 @@ h2 {
   margin-top: 64px;
   margin-bottom: 40px;
   text-align: center;
+}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+  .pop {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .description {
+    margin-bottom: 20px;
+
+  }
+
+  .boxpop-up {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+    visibility: hidden;
+    display: none;
+  }
+
+  .chapter::after {
+    content: "";
+    width: 100%;
+    background-color: #eeeeee;
+    height: 3px;
+  }
+
+  .chapter {
+    display: flex;
+    margin-top: 64px;
+    flex-direction: column;
+  }
+
+  .pop-up {
+    width: 386px;
+  }
+
+  .hpop-up {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .hpop-up::after {
+    width: 64px;
+    height: 2px;
+  }
+
+  .menu-row {
+    width: 22px;
+    height: 20px;
+    position: absolute;
+    right: 35px;
+    display: flex;
+    top: 0;
+    visibility: visible;
+    flex-direction: column;
+  }
+
+  .menu-drop {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    margin-top: 5px;
+
+
+  }
+
+  .top-trend {
+    width: calc(25% - 4px);
+    min-width: 244px;
+    height: 244px;
+  }
+
+  .picture {
+    width: 100%;
+  }
+
+  .block {
+    width: 100%;
+  }
+
+  .top-trend__trend1 {
+    background-color: lightgreen;
+    background-image: url(../img/trend1.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .top-trend__trend1 {
+    margin-left: 0;
+    width: calc(50% - 4px);
+    min-width: 244px;
+    height: 244px;
+    margin-top: 4px;
+
+  }
+
+  .top-trend__trend2 {
+    margin-left: 4px;
+    background-color: lightgreen;
+    background-image: url(../img/trend2.jpg);
+    background-size: cover;
+    background-position: center center;
+
+  }
+
+  .top-trend__trend2 {
+    margin-left: 0;
+    width: calc(50% - 4px);
+    min-width: 244px;
+    height: 244px;
+    margin-top: 4px;
+
+  }
+
+  .top-trend__trend3 {
+    margin-left: 4px;
+    background-color: lightgreen;
+    background-image: url(../img/trend3.jpg);
+    background-size: cover;
+    background-position: center center;
+
+  }
+
+  .top-trend__trend4 {
+    margin-left: 4px;
+    background-color: lightgreen;
+    background-image: url(../img/trend4.jpg);
+    background-size: cover;
+    background-position: center center;
+
+  }
+
+  .top-trend__trend3 {
+    margin-left: 0;
+    width: calc(50% - 4px);
+    min-width: 244px;
+    height: 244px;
+    margin-top: 4px;
+
+  }
+
+  .top-trend__trend4 {
+    width: calc(50% - 4px);
+    min-width: 244px;
+    height: 244px;
+    margin-top: 4px;
+    margin-left: 0;
+  }
+
+  .trend_topic {
+    font-size: 17px;
+  }
+
+  .border-trend {
+    width: auto;
+  }
+
+  .page {
+    width: auto;
+    display: flex;
+    margin-left: 33px;
+    margin-right: 33px;
+    justify-content: space-between;
+  }
+
+  .aside {
+    margin-left: 33px;
+  }
+
+  .mainpage {
+    margin-left: 0;
+    flex: 1;
+  }
+
+  .block {
+    margin-top: 10px;
+    margin-left: 0%;
+  }
+
+  .futer {
+    width: 100%;
+    min-width: 641px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .futer-top {
+    height: auto;
+
+  }
+
+  .futer-pop__first {
+    width: calc(50% - 30px);
+    min-width: 300px;
+    margin-right: 20px;
+
+  }
+
+  /*.futer-pop__first:nth-child(3) {
+    margin-top: 24px;
+  }*/
+
+  .products-image {
+    display: block;
+    min-width: 300px;
+    width: calc(100% - 46px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+  }
+
+  .footer {
+    display: flex;
+    width: 100%;
+    min-width: 50px;
+
+    box-sizing: border-box;
+    background-color: #f4f7f6;
+    margin-top: 64px;
+    justify-content: center;
+    padding-left: 0;
+
+  }
+
+  .twitter {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    margin-top: 32px;
+  }
+
+  .twitter:nth-child(1n+2) {
+    margin-left: 44px;
+
+  }
+
+  .header-top {
+    width: auto;
+  }
+
+  .header-main {
+    font-size: 40px;
+    width: auto;
+
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .topic {
+    font-size: 17px;
+  }
+
+  .aside-text {
+    font-size: 14px;
+  }
+
+}
+
+@media (min-width: 641px) and (max-width: 1200px) and (orientation:landscape) {
+  .top-trend {
+    width: calc(50% - 4px);
+    min-width: 244px;
+    height: 244px;
+  }
+
+}
+
+
+@media (max-width: 640px) {
+
+  .boxpop-up {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+  }
+  
+  .chapter::after {
+    content: "";
+    width: 100%;
+    background-color: #eeeeee;
+    height: 3px;
+  }
+
+  .pop-up {
+    width: 330px;
+    min-width: 330px;
+    resize: none;
+  }
+
+  .hpop-up {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .hpop-up::after {
+    width: 64px;
+    height: 2px;
+  }
+
+  .menu {
+    display: none;
+
+  }
+
+  .menu-btn {
+    width: 22px;
+    height: 20px;
+    position: absolute;
+    right: 13px;
+    top: 30px;
+    visibility: visible;
+  }
+
+  .menuclass {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    margin-top: 7px;
+  }
+
+  .header {
+    height: 639px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .header-top {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-main {
+    font-size: 26px;
+    width: auto;
+    line-height: 36px;
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+
+  .header-logo {
+    display: block;
+    width: 269px;
+    margin-top: 224px;
+  }
+
+  .top {
+    flex-wrap: wrap;
+  }
+
+  .htop {
+    font-size: 16px;
+    margin-top: 42px;
+    margin-bottom: 24px;
+  }
+
+  .trend_topic {
+    font-size: 16px;
+  }
+
+  .activity-top {
+    font-size: 16px;
+   padding-left: 24px;
+   
+  }
+
+
+  .top-trend {
+    width: 100%;
+    min-width: 244px;
+    height: 244px;
+    margin-top: 2px;
+    margin-left: 0;
+
+  }
+
+  .chapter {
+    display: flex;
+    margin-top: 44px;
+    margin-left: 15px;
+    margin-right: 15px;
+    flex-direction: column;
+  }
+
+  .description {
+    width: 100%;
+    font-size: 14px;
+    margin: 0 0 23px 0;
+
+  }
+
+  .topic {
+    font-size: 16px;
+  }
+
+  .activity {
+    font-size: 14px;
+    margin-top: 16px;
+    
+  }
+  
+
+  .picture {
+    width: 100%;
+  }
+
+  .block {
+    width: 100%;
+    margin-left: 0;
+
+  }
+.mainpage {
+  padding-left: 12px;
+  padding-right: 24px;
+}
+  .page {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .aside {
+    margin-left: 15px;
+    width: calc(100% - 14px);
+    margin-top: 44px;
+  }
+  .date {
+    margin-bottom: 24px;
+  }
+.desc{
+  margin-right: 14px;
+  
+}
+.button-search {
+  margin-right: 14px;
+}
+  .futer {
+    width: auto;
+    flex-wrap: wrap;
+    padding-top: 0;
+    margin-left: 14px;
+    margin-right: 14px;
+  }
+.pop {
+  flex-direction: column;
+}
+  .futer-pop__first {
+    width: 100%;
+    margin-top: 26px;
+  }
+
+  .products-image {
+    width: calc(100% - 40px);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .futer-border {
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    padding-bottom: 27px;
+  }
+.email {
+  margin-right: 14px;
+}
+.tags {
+  justify-content: space-between;
+}
+  footer {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .footer {
+    display: flex;
+    width: calc(100% - 28px);
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .twitter {
+    width: 20px;
+    height: 20px;
+  }
+
+  .twitter:nth-child(1n+2) {
+    margin-left: 31px;
+  }
+  .menu-row {
+    width: 22px;
+    height: 20px;
+    position: absolute;
+    right: 14px;
+    display: flex;
+    top: 29px;
+    visibility: visible;
+    flex-direction: column;
+  }
+  .menu-drop {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    margin-top: 5px;
+
+
+  }
+
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+  .trend_topic {
+    width: calc(50% - 2px);
+    min-width: 244px;
+    height: 244px;
+    margin-top: 2px;
+  }
 }
