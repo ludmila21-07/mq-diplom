@@ -10,45 +10,45 @@
 </head>
 
 <div class="boxpop-up">
-<div class="pop-up">
-  <button class="popup__close" type="button"></button>
-  <h1 class="hpop-up">Ваш фидбек</h1>
-  <form class="form">
-    <div class="form-group">
-      <label class="select-group">
-        <span class="select-label">Как часто вы заходите на сайт?</span>
-        <select class="select">
-          <option value="almosteveryday" selected>Почти каждый день</option>
-          <option value="everyday">Каждый день</option>
-          <option value="everyweek">Каждую неделю</option>
-        </select>
-      </label>
-    </div>
-    <div class="form-group">
-      <label class="checkbox-group">
-        <div class="contch">
-          <label class="rb">
-            <input type="radio" class="checkbox checkbox_first" name="check" class="c">Да</input>
-            <span class="check check_first"></span>
-          </label>
-          <label class="rb">
-            <input type="radio" class="checkbox checkbox_second" name="check" class="c">Нет</input>
-            <span class="check check_second"></span>
-          </label>
-        </div>
-        <span class="checkbox-text">Вы подписаны на e-mail рассылку?</span>
-      </label>
-      <label class="field-group">
-        <span class="field-label">Расскажите, какой контент вы бы хотели видеть на нашем сайте?</span>
-        <textarea class="field-textarea" placeholder="Может, больше рецептов?" required></textarea>
-      </label>
+  <div class="pop-up">
+    <button class="popup__close" type="button"></button>
+    <h1 class="hpop-up">Ваш фидбек</h1>
+    <form class="form">
+      <div class="form-group">
+        <label class="select-group">
+          <span class="select-label">Как часто вы заходите на сайт?</span>
+          <select class="select">
+            <option value="almosteveryday" selected>Почти каждый день</option>
+            <option value="everyday">Каждый день</option>
+            <option value="everyweek">Каждую неделю</option>
+          </select>
+        </label>
+      </div>
+      <div class="form-group">
+        <label class="checkbox-group">
+          <div class="contch">
+            <label class="rb">
+              <input type="radio" class="checkbox checkbox_first" name="check" class="c">Да</input>
+              <span class="check check_first"></span>
+            </label>
+            <label class="rb">
+              <input type="radio" class="checkbox checkbox_second" name="check" class="c">Нет</input>
+              <span class="check check_second"></span>
+            </label>
+          </div>
+          <span class="checkbox-text">Вы подписаны на e-mail рассылку?</span>
+        </label>
+        <label class="field-group">
+          <span class="field-label">Расскажите, какой контент вы бы хотели видеть на нашем сайте?</span>
+          <textarea class="field-textarea" placeholder="Может, больше рецептов?" required></textarea>
+        </label>
 
-      <button class="butpopup" type="submit">Отправить</button>
+        <button class="butpopup">Отправить</button>
 
-    </div>
+      </div>
 
-  </form>
-</div>
+    </form>
+  </div>
 </div>
 
 
@@ -56,13 +56,12 @@
 <body>
   <header class="header">
     <div class="header-top">
-      <a href="#"><img src="svg/noemi-logo.svg"
-                  class="header-logo" alt="noemi"></a>
-                  <div class="menu-row">
-                    <span class="menu-drop"></span>
-                    <span class="menu-drop"></span>
-                    <span class="menu-drop"></span>
-                  </div>
+      <a href="#"><img src="svg/noemi-logo.svg" class="header-logo" alt="noemi"></a>
+      <div class="menu-row">
+        <span class="menu-drop"></span>
+        <span class="menu-drop"></span>
+        <span class="menu-drop"></span>
+      </div>
       <nav class="menu">
         <ul class="menu-list">
           <li class="menu-list-item">
@@ -96,7 +95,7 @@
           <li class="activity">Lifestyle</li>
           <li class="activity">Interior</li>
         </ul>
-        <a class="topic top trend_topic" href="#">Сейчас в тренде: сад на подоконнике</a>
+        <h2 class="fd"><a class="trend_topic" href="#">Сейчас в тренде: сад на подоконнике</a></h2>
       </div>
     </div>
 
@@ -106,7 +105,8 @@
         <ul class="activity-top">
           <li class="activity">Food</li>
         </ul>
-        <a class="topic top trend_topic" href="#">Сыры на красивых картинках из интернета: какин они на вкус?</a>
+        <h2 class="fd"><a class="trend_topic" href="#">Сыры на красивых картинках из интернета: какин они на вкус?</a>
+        </h2>
       </div>
     </div>
     <div class="top-trend top-trend__trend3">
@@ -116,7 +116,8 @@
           <li class="activity">Travel</li>
         </ul>
 
-        <a class="topic top trend_topic" href="#">Собираемся в первый поход в горы</a>
+        <h2 class="fd"><a class="trend_topic" href="#">Собираемся в первый поход в горы</a>
+        </h2>
       </div>
     </div>
     <div class="top-trend top-trend__trend4">
@@ -126,7 +127,8 @@
           <li class="activity">Health</li>
         </ul>
 
-        <a class="topic top trend_topic" href="#">Сейчас в тренде:сколько витамина С в лимонах?</a>
+        <h2 class="fd"><a class="trend_topic" href="#">Сейчас в тренде:сколько витамина С в лимонах?</a>
+        </h2>
       </div>
     </div>
   </div>
@@ -155,8 +157,7 @@
       </section>
 
       <section class="chapter">
-        <img class="picture" src="img\last-post2.jpg"
-          alt="Йога">
+        <img class="picture" src="img\last-post2.jpg" alt="Йога">
         <div class="block">
           <ul class="activity-general">
             <li class="activity">Health</li>
@@ -176,8 +177,7 @@
       </section>
 
       <section class="chapter">
-        <img class="picture" src="img\last-post3.jpg"
-          alt="Музыкальный фестиваль">
+        <img class="picture" src="img\last-post3.jpg" alt="Музыкальный фестиваль">
         <div class="block">
           <ul class="activity-general">
             <li class="activity">Music</li>
@@ -196,8 +196,7 @@
       </section>
 
       <section class="chapter">
-        <img class="picture" src="img\last-post4.jpg"
-          alt="Кулинария">
+        <img class="picture" src="img\last-post4.jpg" alt="Кулинария">
         <div class="block">
           <ul class="activity-general">
             <li class="activity">Lifestyle</li>
@@ -217,8 +216,7 @@
       </section>
 
       <section class="chapter">
-        <img class="picture" src="img\last-post5.jpg"
-          alt="Интерьер">
+        <img class="picture" src="img\last-post5.jpg" alt="Интерьер">
         <div class="block">
           <ul class="activity-general">
             <li class="activity">Lifestyle</li>
@@ -246,8 +244,7 @@
       <h2 class="aside-topic">Новые посты</h2>
 
       <section class="news">
-        <img class="aside-image" src="img\2.jpg"
-          alt="Увлекательные места">
+        <img class="aside-image" src="img\2.jpg" alt="Увлекательные места">
         <div class="aside-content">
           <div class="aside-date">14 июня 2019</div>
           <a href="#" class="aside-text">
@@ -267,8 +264,7 @@
       </section>
 
       <section class="news">
-        <img class="aside-image" src="img\45.jpg"
-          alt="Балкон">
+        <img class="aside-image" src="img\45.jpg" alt="Балкон">
         <div class="aside-content">
           <div class="aside-date">14 июня 2019</div>
           <a href="#" class="aside-text">
@@ -278,8 +274,7 @@
       </section>
 
       <section class="news">
-        <img class="aside-image" src="img\151.jpg"
-          alt="Наука">
+        <img class="aside-image" src="img\151.jpg" alt="Наука">
         <div class="aside-content">
           <div class="aside-date">14 июня 2019</div>
           <a href="#" class="aside-text">
@@ -289,8 +284,7 @@
       </section>
 
       <section class="news">
-        <img class="aside-image" src="img\7.jpg"
-          alt="Прически">
+        <img class="aside-image" src="img\7.jpg" alt="Прически">
         <div class="aside-content">
           <div class="aside-date">14 июня 2019</div>
           <a href="#" class="aside-text">
@@ -354,10 +348,10 @@
         <source media="(min-width: 641px) and (max-width: 1200px)" srcset="img\shop-item-tablet1.jpg">
         <source media="(max-width: 640px)" srcset="img\shop-item-mobile1.jpg">
         <img class="products-image" src="img\shop-item-desk1.jpg" alt="pillows">
-    </picture>
+      </picture>
       <div class="futer-trend1"></div>
       <div class="futer-border">
-        <h3><a class="futer-top" href="#">Подушки на диван</h3></a>
+        <h3 class="futer-top">Подушки на диван</h3></a>
         <p class="futer-aside">Набор из двух подушек с модными принтами. Видео о создании<a class="futer-desc" href="#">
             здесь</a></p>
         <div class="futer-price">
@@ -380,7 +374,7 @@
         <img class="products-image" src="img\shop-item-desk2.jpg" alt="hare">
       </picture>
       <div class="futer-border">
-        <h3><a class="futer-top" href="#">Кукла "Зайчик"</h3></a>
+        <h3 class="futer-top">Кукла "Зайчик"</h3></a>
         <p class="futer-aside">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена<a class="futer-desc"
             href="#">
             внесенняя серия постов</a>в блоге и несколько подкастов.</p>
@@ -403,7 +397,7 @@
         <img class="products-image" src="img\shop-item-desk3.jpg" alt="border">
       </picture>
       <div class="futer-border">
-        <h3><a class="futer-top" href="#">Шестиугольная рамка</h3></a>
+        <h3 class="futer-top">Шестиугольная рамка</h3></a>
         <p class="futer-aside">Необычная рамка для украшения дома из видео<a class="futer-desc" href="#">"Как сделать
             рамку из подручных средств за 30 минут</a></p>
         <div class="futer-price">

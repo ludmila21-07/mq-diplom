@@ -222,7 +222,6 @@ body {
 
 .form-group {
   display: flex;
-  flex-direction: column;
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 0px;
@@ -375,10 +374,14 @@ body {
 .activity-top {
   display: flex;
   flex-direction: row;
+  margin: 0px;
+  padding: 0px;
+
 }
 
 .activity {
   font-family: OpenSans-Bold;
+  margin-bottom: 12px;
   color: #b59f5b;
   font-size: 14px;
   text-transform: uppercase;
@@ -394,8 +397,6 @@ body {
   font-size: 20px;
   color: #0f0d0e;
   text-transform: uppercase;
-  margin-top: 14px;
-  padding-bottom: 35px;
 }
 
 .pop {
@@ -457,7 +458,6 @@ body {
   font-family: OpenSans-Bold;
   text-transform: uppercase;
   text-decoration: none;
-  padding-left: 26px;
   margin-top: 0px;
 }
 
@@ -470,8 +470,16 @@ body {
 }
 
 .border-trend {
+  padding: 39px 35px 30px 35px;
   border: 2px solid #907c47;
 
+
+
+}
+
+.fd {
+  margin: 0;
+  text-align: start;
 
 }
 
@@ -528,7 +536,7 @@ body {
 
 .topic {
   margin-top: 13px;
-  padding-bottom: 30px;
+
 }
 
 .aside {
@@ -1225,7 +1233,7 @@ h2 {
     position: fixed;
     z-index: 3;
   }
-  
+
   .chapter::after {
     content: "";
     width: 100%;
@@ -1316,8 +1324,9 @@ h2 {
 
   .activity-top {
     font-size: 16px;
-   padding-left: 24px;
-   
+
+    margin: 0px;
+
   }
 
 
@@ -1352,9 +1361,9 @@ h2 {
   .activity {
     font-size: 14px;
     margin-top: 16px;
-    
+
   }
-  
+
 
   .picture {
     width: 100%;
@@ -1365,10 +1374,12 @@ h2 {
     margin-left: 0;
 
   }
-.mainpage {
-  padding-left: 12px;
-  padding-right: 24px;
-}
+
+  .mainpage {
+    padding-left: 12px;
+    padding-right: 24px;
+  }
+
   .page {
     display: flex;
     flex-wrap: wrap;
@@ -1381,16 +1392,20 @@ h2 {
     width: calc(100% - 14px);
     margin-top: 44px;
   }
+
   .date {
     margin-bottom: 24px;
   }
-.desc{
-  margin-right: 14px;
-  
-}
-.button-search {
-  margin-right: 14px;
-}
+
+  .desc {
+    margin-right: 14px;
+
+  }
+
+  .button-search {
+    margin-right: 14px;
+  }
+
   .futer {
     width: auto;
     flex-wrap: wrap;
@@ -1398,9 +1413,11 @@ h2 {
     margin-left: 14px;
     margin-right: 14px;
   }
-.pop {
-  flex-direction: column;
-}
+
+  .pop {
+    flex-direction: column;
+  }
+
   .futer-pop__first {
     width: 100%;
     margin-top: 26px;
@@ -1419,12 +1436,15 @@ h2 {
     height: auto;
     padding-bottom: 27px;
   }
-.email {
-  margin-right: 14px;
-}
-.tags {
-  justify-content: space-between;
-}
+
+  .email {
+    margin-right: 14px;
+  }
+
+  .tags {
+    justify-content: space-between;
+  }
+
   footer {
     display: flex;
     flex-direction: column;
@@ -1446,6 +1466,7 @@ h2 {
   .twitter:nth-child(1n+2) {
     margin-left: 31px;
   }
+
   .menu-row {
     width: 22px;
     height: 20px;
@@ -1456,6 +1477,7 @@ h2 {
     visibility: visible;
     flex-direction: column;
   }
+
   .menu-drop {
     display: block;
     width: 100%;
